@@ -26,7 +26,7 @@ return (
     <div>
         <div className="navbar-container">
             <h2 className='navbar-title'>MERNG Template</h2>
-            {loggedIn ?  <button onClick={signout}>Log Out</button>
+            {loggedIn ?  <button className='nav-link' onClick={signout}><Link to="/">Logout</Link></button>
     :
         <div>
         <button className='nav-link'><Link to="/login">Login</Link></button>
